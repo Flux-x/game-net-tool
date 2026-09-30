@@ -30,11 +30,11 @@ if errorlevel 1 (
     exit /b 1
 )
 
-echo [*] Compiling tcp_stress.exe...
+echo [*] Compiling game_net_tool.exe...
 cl /nologo /O2 /std:c++17 /EHsc /W3 /DNDEBUG /MT ^
     "%ROOT%src\tcp_tool.cpp" ^
-    /Fe:"%OUT%\tcp_stress.exe" ^
-    /Fo:"%OUT%\tcp_stress.obj" ^
+    /Fe:"%OUT%\game_net_tool.exe" ^
+    /Fo:"%OUT%\game_net_tool.obj" ^
     /link /SUBSYSTEM:CONSOLE Ws2_32.lib
 
 if errorlevel 1 (
@@ -43,4 +43,4 @@ if errorlevel 1 (
 )
 
 del /q "%OUT%\*.obj" >nul 2>&1
-echo [SUCCESS] Binary created: bin\tcp_stress.exe
+echo [SUCCESS] Binary created: bin\game_net_tool.exe

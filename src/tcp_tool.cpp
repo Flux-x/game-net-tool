@@ -1,6 +1,6 @@
-// Standalone Windows TCP Network Stress & Throughput Tool
+// Standalone Windows TCP Network Diagnostic & Connection Benchmark Tool for Source Engine 1 and Minecraft servers
 
-// Usage: tcp_stress.exe --host <ip:port> [options]
+// Usage: game_net_tool.exe --host <ip:port> [options]
 
 
 
