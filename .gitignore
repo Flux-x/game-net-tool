@@ -1,0 +1,6 @@
+bin/*.obj
+bin/*.pdb
+bin/*.ilk
+build/
+*.user
+.vs/
